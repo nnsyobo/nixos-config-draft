@@ -19,7 +19,6 @@ in {
     # onActivation.cleanup = "uninstall";
 
     masApps = {
-      "1password" = 1333542190;
       "wireguard" = 1451685025;
     };
   };

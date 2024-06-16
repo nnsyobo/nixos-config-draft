@@ -12,6 +12,7 @@ _:
   "zoom"
 
   # Utility Tools
+  "1password"
 
   # Entertainment Tools
 

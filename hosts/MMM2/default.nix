@@ -52,6 +52,8 @@ in {
         "com.apple.mouse.tapBehavior" = 1;
         "com.apple.sound.beep.volume" = 0.0;
         "com.apple.sound.beep.feedback" = 0;
+
+        "com.apple.swipescrolldirection" = false;
       };
 
       dock = {

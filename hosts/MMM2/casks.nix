@@ -14,7 +14,6 @@ _:
   # Utility Tools
 
   # Entertainment Tools
-  "vlc"
 
   # Productivity Tools
   "raycast"

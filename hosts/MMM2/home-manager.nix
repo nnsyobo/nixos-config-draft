@@ -20,6 +20,7 @@ in {
 
     masApps = {
       "wireguard" = 1451685025;
+      "xcode" = 497799835;
     };
   };
 

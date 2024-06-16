@@ -1,8 +1,10 @@
-{ config, pkgs, user, ... }: {
+{ config, pkgs, user, ... }:
+  let user = "alice";
+in {
   imports = [
     ./home-manager.nix
     # ../../modules/shared
-    ../../modules/shared/cachix
+    ../../modules/shared/cachix.nix
   ];
 
   # Auto upgrade nix package and the daemon service.
@@ -32,9 +34,6 @@
   # Load configuration that is shared across systems
   environment.systemPackages = with pkgs; [
   ];
-
-  # Enable fonts dir
-  fonts.fontDir.enable = true;
 
   system = {
     stateVersion = 4;

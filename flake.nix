@@ -44,7 +44,7 @@
     {
       darwinConfigurations = {
         MMM2 = nix-darwin.lib.darwinSystem {
-          inherit system;
+          system = "aarch64-darwin";
           specialArgs = inputs;
           modules = [
             home-manager.darwinModules.home-manager
@@ -64,7 +64,7 @@
             }
             ./hosts/MMM2
           ];
-        }
+        };
       };
 
       # nixosConfigurations = {

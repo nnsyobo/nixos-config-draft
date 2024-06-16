@@ -1,4 +1,6 @@
-{ config, pkgs, lib, home-manager, user, ... }: {
+{ config, pkgs, lib, home-manager, user, ... }:
+  let user = "alice";
+in {
   imports = [
     # ./dock
   ];
@@ -35,7 +37,7 @@
         # ];
         stateVersion = "24.05";
       };
-      programs = {} // import ../shared/home-manager.nix { inherit config pkgs lib; };
+      # programs = {} // import ../shared/home-manager.nix { inherit config pkgs lib; };
     };
   };
 
